@@ -68,7 +68,7 @@ func returnValueForKey(dict: Dictionary<String,String>, key: String) -> String? 
 
 
 
-// Provided a block as a parameter, simply execute the block
-func executeBlock(block: ()->()) {
+// Provided a closure( same as obj-c block) as a parameter, simply execute the closure
+func executeClosure(closure: ()->()) {
 
 }

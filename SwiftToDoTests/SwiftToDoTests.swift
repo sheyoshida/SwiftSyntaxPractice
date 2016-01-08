@@ -98,12 +98,12 @@ class SwiftToDoTests: XCTestCase {
         XCTAssertTrue(returnValueForKey(dict, key: "mountain") == "yay")
     }
     
-    func testBlockSyntaxUnderstanding() {
+    func testClosureSyntaxUnderstanding() {
         var i = 0
-        let block = {()
+        let closure = {()
             i++
         }
-        executeBlock(block)
+        executeClosure(closure)
         XCTAssertTrue(i == 1)
     }
     
