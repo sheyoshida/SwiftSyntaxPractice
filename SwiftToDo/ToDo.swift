@@ -32,18 +32,13 @@ func returnTheSumOfIntegerXAndIntegerY(integerX: Int, integerY: Int) -> Int? {
     return nil
 }
 
-// return the difference between A and B
-func returnTheDifferenceBetweenDoubleXAndDoubleY(A: Double, B: Double) -> Double? {
-    return nil
-}
-
 // return the product of x and 100
 func returnTheProductOfXAnd100(x: Double) -> Double? {
     return nil
 }
 
 // return true if x is greater than 10
-// return false if x is less than or greater than 10
+// return false if x is less than or equal to 10
 func isGreaterThan10(x: Double) -> Bool? {
    return nil
 }

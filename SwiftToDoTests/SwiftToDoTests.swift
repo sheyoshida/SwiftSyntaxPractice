@@ -35,11 +35,6 @@ class SwiftToDoTests: XCTestCase {
         XCTAssertTrue(returnTheSumOfIntegerXAndIntegerY(1, integerY: -2) == -1)
     }
     
-    func testReturnTheDifferenceBetweenTwoNumbers() {
-        XCTAssertTrue(returnTheDifferenceBetweenDoubleXAndDoubleY(2, B: 1) == 1)
-        XCTAssertTrue(returnTheDifferenceBetweenDoubleXAndDoubleY(4.2, B: 4.1) == 0.1)
-    }
-    
     func testReturnTheProductOfXAnd100() {
         let input1 = 2.0
         let input2 = 0.5
@@ -56,13 +51,18 @@ class SwiftToDoTests: XCTestCase {
     }
     
     func testIsGreaterThan10() {
-        XCTAssertNotNil(isGreaterThan10(9.9))
-        XCTAssertNotNil(isGreaterThan10(20))
-        guard let ans = isGreaterThan10(20) else {
+        let x = 22.0
+        let y = 10.0
+        XCTAssertNotNil(isGreaterThan10(x))
+        XCTAssertNotNil(isGreaterThan10(y))
+        guard let ans = isGreaterThan10(x) else {
             return
         }
         XCTAssertTrue(ans)
-        XCTAssertFalse(ans)
+        guard let ans1 = isGreaterThan10(y) else {
+            return
+        }
+        XCTAssertFalse(ans1)
     }
     
     func testIsEven() {
